@@ -1,0 +1,39 @@
+/* 色はここにまとめる。暗い配色を足すときは、この変数を差し替える。 */
+:root {
+  --bg: #faf8f3;
+  --panel: #fffefb;
+  --text: #2b2b2b;
+  --text-sub: #5d5a52;
+  --grid: #e3dfd5;
+  --border: #ddd8cc;
+  --shadow-panel: 0 2px 10px rgb(43 43 43 / 4%);
+  --curve-main: #0072b2;
+  --curve-accent: #d55e00;
+  --aux: #009e73;
+  --aux2: #cc79a7;
+  --focus: #0072b2;
+
+  /* 穴の色は意味で決める(背景 #FAF8F3 に対して、どれも 3:1 以上)。同じ意味なら式が違っても同じ色 */
+  --role-size: #d55e00; /* 大きさ・傾き 3.64 */
+  --role-stretch: #009e73; /* 横の伸び縮み 3.22 */
+  --role-shift-x: #c86d9f; /* 横の移動 3.22(元の #CC79A7 は 2.88 で不足) */
+  --role-shift-y: #1c92d5; /* 縦の移動 3.23(元の #56B4E9 は 2.17 で不足) */
+
+  /* 曲線の色。a〜d の色とは重ならない色にし、番号・線の種類でも区別する */
+  --curve-1: #0072b2; /* 4.89 */
+  --curve-2: #555555; /* 7.02 */
+  --curve-3: #7b3294; /* 7.26 */
+  --curve-4: #8c510a; /* 6.00 */
+
+  --font-ui: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Noto Sans JP',
+    'Meiryo', sans-serif;
+}
+
+:root {
+  --panel-strong: #f5f2eb;
+  --tap: 44px; /* 指で押せる最小の大きさ */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
